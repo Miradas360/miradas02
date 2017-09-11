@@ -1,0 +1,3 @@
+[submodule "stories/02/khipu"]
+	path = stories/02/khipu
+	url = https://github.com/jaquerespeis/khipu-360
