@@ -4,6 +4,8 @@
  * Component that listens to an event, fades out an entity, swaps the texture, and fades it
  * back in.
  */
+
+
 AFRAME.registerComponent('set-image', {
   schema: {
     on: {type: 'string'},
@@ -22,6 +24,7 @@ AFRAME.registerComponent('set-image', {
       // Fade out image.
       data.target.emit('set-image-fade');
       // Wait for fade to complete.
+      window.currentMove = data.src.replace('#','') ;
       setTimeout(function () {
         // Set image.
         data.target.setAttribute('material', 'src', data.src);
