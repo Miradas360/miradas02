@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Miradas 360 #S01E01 - Pasaje a Borges</title>
+    <!-- Facebook iframe embed  -->
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:site" content="@divevr">
+    <meta name="twitter:title" content=">Miradas 360 #S01E01 -Pasaje a Borges">
+    <meta name="twitter:description" content="Jorge Luis Borges es tu guía para recorrer la Antigua Biblioteca Nacional. Viví la experiencia #PasajeABorges, por Fernanda Ibañez, Gia Castello y Adriel Zarate">
+    <meta name="twitter:image" content="https://miradas360.github.io/miradas360-01/images/posters/01-borges.png">
+    <meta name="twitter:player" content="https://miradas360.github.io/miradas360-01/01-Borges/index.html">
+    <meta name="twitter:player:width" content="600">
+    <meta name="twitter:player:height" content="370">
+
+    <meta property="og:title" content="Miradas 360 #S01E01 - Pasaje a Borges">
+    <meta property="og:url" content="https://miradas360.github.io/miradas360-01/01-Borges/index.html">
+    <meta property="og:description" content="Jorge Luis Borges es tu guía para recorrer la Antigua Biblioteca Nacional. Viví la experiencia #PasajeABorges, por Fernanda Ibañez, Gia Castello y Adriel Zarate">
+    <meta property="og:type" content="video" />
+    <meta property="og:image" content="https://miradas360.github.io/miradas360-01/images/posters/01-borges.png">
+    <meta property="og:image:seucre_url" content="https://miradas360.github.io/miradas360-01/images/posters/01-borges.png">
+
+    <meta property="og:type" content="video" />
+    <meta property="og:video:url" content="https://miradas360.github.io/miradas360-01/01-Borges/index.html">
+    <meta property="og:video:secure_url" content="https://miradas360.github.io/miradas360-01/01-Borges/index.html">
+    <meta property="og:video:type" content="text/html">
+    <meta property="og:video:width" content="560">
+    <meta property="og:video:height" content="395">
+
+    <meta property="og:video:url" content="https://miradas360.github.io/miradas360-01/01-Borges/index.html">
+    <meta property="og:video:secure_url" content="https://miradas360.github.io/miradas360-01/01-Borges/index.html">
+    <meta property="og:video:type" content="application/x-shockwave-flash">
+    <meta property="og:video:width" content="560">
+    <meta property="og:video:height" content="395">
+
+    <meta name="description" content="Jorge Luis Borges es tu guía para recorrer la Antigua Biblioteca Nacional. Viví la experiencia #PasajeABorges, por Fernanda Ibañez, Gia Castello y Adriel Zarate">
+
+    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
+    <script src="js/droid_sans_mono_regular.typeface.js"></script>
+</head>
+
+<body>
+
+    <a-scene>
+
+        <a-assets>
+
+            <img id="cardboard" src="img/cardboard.png">
+            <img id="headphones" src="img/headphones.png">
+            <img id="rotation" src="img/rotation.png">
+
+            <img id="intro" src="img/intro.jpg">
+
+            <img id="pathEscena1" src="img/pathEscena1.png">
+            <img id="bgEscena1" src="img/bgEscena1.jpg">
+
+            <img id="pathEscena2" src="img/pathEscena2.png">
+            <img id="bgEscena2" src="img/bgEscena2.jpg">
+
+            <img id="pathEscena3" src="img/pathEscena3.png">
+            <img id="bgEscena3" src="img/bgEscena3.jpg">
+
+            <img id="pathEscena4" src="img/pathEscena4.png">
+            <img id="bgEscena4" src="img/bgEscena4.jpg">
+
+        </a-assets>
+
+        <a-sky color="#000"></a-sky>
+        <a-entity sound="src: sound/astor-piazzolla_luis-medina-castro_jorge-luis-borges--el-tango-1965.mp3; autoplay: true; volume: 1; loop:true;"></a-entity>
+
+        <a-entity position="0 2.2 4">
+            <a-entity id="camara" camera look-controls wasd-controls>
+
+                <a-image id="path" position="-1 0 -2" rotation="0 0 0" width=".12" height=".8" src="" scale="0 0 0"></a-image>
+
+                <a-cursor id="cursor" opacity="0" color="#2E3A87">
+                    <a-entity id="audio" position="0 0 0"></a-entity>
+
+                    <!-- intro -->
+
+                    <a-image src="#headphones" opacity="0" position="0 0 -6">
+                        <a-animation attribute="opacity" from="0" to="1" begin="0" dur="5000">
+                        </a-animation>
+                        <a-animation attribute="opacity" from="1" to="0" begin="5000" dur="5000">
+                        </a-animation>
+                        <a-animation attribute="visible" begin="10000" to="false"></a-animation>
+                        <a-animation attribute="rotation" dur="5000" fill="forwards" to="0 360 0" repeat="2"></a-animation>
+                    </a-image>
+
+                    <a-image src="#cardboard" visibiity="false" opacity="0" position="0 0 -6">
+                        <a-animation attribute="visible" begin="10000" to="true"></a-animation>
+                        <a-animation attribute="opacity" from="0" to="1" begin="10000" dur="5000">
+                        </a-animation>
+                        <a-animation attribute="opacity" from="1" to="0" begin="15000" dur="5000">
+                        </a-animation>
+                        <a-animation attribute="visible" begin="20000" to="false"></a-animation>
+                        <a-animation attribute="rotation" begin="10000" dur="5000" fill="forwards" to="0 360 0" repeat="3">
+                        </a-animation>
+                    </a-image>
+
+                    <a-image src="#rotation" visibiity="false" opacity="0" position="0 0 -6">
+                        <a-animation attribute="visible" begin="20000" to="true"></a-animation>
+                        <a-animation attribute="opacity" from="0" to="1" begin="20000" dur="5000">
+                        </a-animation>
+                        <a-animation attribute="opacity" from="1" to="0" begin="25000" dur="5000">
+                        </a-animation>
+                        <a-animation attribute="visible" begin="30000" to="false"></a-animation>
+                        <a-animation attribute="rotation" begin="20000" dur="5000" fill="forwards" to="0 360 0" repeat="3"></a-animation>
+                    </a-image>
+
+                    <a-plane text="text: Ponete auriculares para una mejor experiencia; size:0.15; font: Droid Sans Mono;" opacity="0" visibiity="false" color="white" position="-2.7 -1 -6">
+                        <a-animation attribute="opacity" from="0" to="1" dur="5000">
+                        </a-animation>
+                        <a-animation attribute="opacity" from="1" to="0" begin="5000" dur="5000">
+                        </a-animation>
+                        <a-animation attribute="visible" begin="10000" to="false"></a-animation>
+                    </a-plane>
+
+                    <a-plane text="text: Coloca tu teléfono en el Cardboard; size:0.15; font: Droid Sans Mono;" opacity="0" visibiity="false" color="white" position="-2 -1 -6">
+                        <a-animation attribute="visible" begin="10000" to="true"></a-animation>
+                        <a-animation attribute="opacity" from="0" to="1" begin="10000" dur="5000">
+                        </a-animation>
+                        <a-animation attribute="opacity" from="1" to="0" begin="15000" dur="5000">
+                        </a-animation>
+                        <a-animation attribute="visible" begin="20000" to="false"></a-animation>
+                    </a-plane>
+
+                    <a-plane text="text: Vas a poder moverte libremente todo el tiempo; size:0.15; font: Droid Sans Mono;" visibiity="false" opacity="0" color="white" position="-2.7 -1 -6">
+                        <a-animation attribute="visible" begin="20000" to="true"></a-animation>
+                        <a-animation attribute="opacity" from="0" to="1" begin="20000" dur="5000">
+                        </a-animation>
+                        <a-animation attribute="opacity" from="1" to="0" begin="25000" dur="5000">
+                        </a-animation>
+                        <a-animation attribute="visible" begin="30000" to="false"></a-animation>
+                    </a-plane>
+
+                    <a-plane src="#intro" opacity="0" visibility="false" width="5" height="2.8" position="0 0 -3">
+                        <a-animation attribute="opacity" from="0" to="1" begin="30000" dur="5000">
+                        </a-animation>
+                        <a-animation attribute="opacity" from="1" to="0" begin="35000" dur="5000">
+                        </a-animation>
+                        <a-animation id="start" attribute="visible" begin="40000" to="false"></a-animation>
+                    </a-plane>
+
+                    <!-- cierre -->
+
+                    <a-plane id="tituloCierre" text="text:Pasaje a Borges; font: Droid Sans Mono;" visibility="false" position="-3 2 -6" opacity="0" color="white" scale="0 0 0"></a-plane>
+                    <a-plane class="cierre" text="text:Montado y Desarrollado entre julio y agosto de 2016; size:0.15; font: Droid Sans Mono;" visibility="false" position="-3 2 -6" opacity="0" color="white" scale="0 0 0"></a-plane>
+                    <a-plane class="cierre" text="text:En Antigua Biblioteca Nacional, Monserrat, Buenos Aires; size:0.15; font: Droid Sans Mono;" visibility="false" position="-3 1.5 -6" opacity="0" color="white" scale="0 0 0"></a-plane>
+                    <a-plane class="cierre" text="text:Guion y producción general: Fernanda Ibañez; size:0.15; font: Droid Sans Mono;" visibility="false" position="-3 1 -6" opacity="0" color="white" scale="0 0 0"></a-plane>
+                    <a-plane class="cierre" text="text:Mentoria: Gia Castello; size:0.15; font: Droid Sans Mono;" visibility="false" position="-3 .5 -6" opacity="0" color="white" scale="0 0 0"></a-plane>
+                    <a-plane class="cierre" text="text:Montaje y programación: Adriel Sebastian Zarate; size:0.15; font: Droid Sans Mono;" visibility="false" position="-3 0 -6" opacity="0" color="white" scale="0 0 0"></a-plane>
+
+            </a-entity>
+        </a-entity>
+
+        <a-sphere class="escena" src="#bgEscena1" radius="1" position="0 1.5 -12" scale="0 0 0"></a-sphere>
+        <a-sphere class="escena" src="#bgEscena2" radius="1" rotation="0 10 0" position="0 10 0" scale="0 0 0"></a-sphere>
+        <a-sphere class="escena" src="#bgEscena3" radius="1" rotation="0 -90 0" position="0 0 0" scale="0 0 0"></a-sphere>
+        <a-sphere class="escena" src="#bgEscena4" radius="1" position="0 0 15" scale="0 0 0"></a-sphere>
+
+        <a-plane id="subtitulo1" text="" color="white"></a-plane>
+        <a-plane id="subtitulo2" text="" color="white"></a-plane>
+        <a-plane id="subtitulo3" text="" color="white"></a-plane>
+        <a-plane id="subtitulo4" text="" color="white"></a-plane>
+        <a-plane id="subtitulo5" text="" color="white"></a-plane>
+        <a-plane id="subtitulo6" text="" color="white"></a-plane>
+        <a-plane id="subtitulo7" text="" color="white"></a-plane>
+
+        <a-torus id="portal" position="5 -.5 3.8" rotation="0 90 0" color="red" opacity=".4" segments-radial="4" segments-tubular="100" radius=".6" radius-tubular="0.02" scale="0 0 0">
+            <a-sphere id="gatillo" position="0 0 0" color="red;" opacity=".2" radius=".1">
+                <a-animation attribute="geometry.radius" direction="alternate" dur="800" easing="ease-out" to=".3" repeat="indefinite"></a-animation>
+            </a-sphere>
+        </a-torus>
+
+    </a-scene>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

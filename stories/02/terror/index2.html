@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Miradas 360 #S02E01 </title>
+    <!-- Facebook iframe embed  -->
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:site" content="@divevr">
+    <meta name="twitter:title" content=">Miradas 360 #S01E01 -Pasaje a Borges">
+    <meta name="twitter:description" content="Jorge Luis Borges es tu guía para recorrer la Antigua Biblioteca Nacional. Viví la experiencia #PasajeABorges, por Fernanda Ibañez, Gia Castello y Adriel Zarate">
+    <meta name="twitter:image" content="https://miradas360.github.io/miradas360-01/images/posters/01-borges.png">
+    <meta name="twitter:player" content="https://miradas360.github.io/miradas360-01/01-Borges/index.html">
+    <meta name="twitter:player:width" content="600">
+    <meta name="twitter:player:height" content="370">
+
+    <meta property="og:title" content="Miradas 360 #S01E01 - Pasaje a Borges">
+    <meta property="og:url" content="https://miradas360.github.io/miradas360-01/01-Borges/index.html">
+    <meta property="og:description" content="Jorge Luis Borges es tu guía para recorrer la Antigua Biblioteca Nacional. Viví la experiencia #PasajeABorges, por Fernanda Ibañez, Gia Castello y Adriel Zarate">
+    <meta property="og:type" content="video" />
+    <meta property="og:image" content="https://miradas360.github.io/miradas360-01/images/posters/01-borges.png">
+    <meta property="og:image:seucre_url" content="https://miradas360.github.io/miradas360-01/images/posters/01-borges.png">
+
+    <meta property="og:type" content="video" />
+    <meta property="og:video:url" content="https://miradas360.github.io/miradas360-01/01-Borges/index.html">
+    <meta property="og:video:secure_url" content="https://miradas360.github.io/miradas360-01/01-Borges/index.html">
+    <meta property="og:video:type" content="text/html">
+    <meta property="og:video:width" content="560">
+    <meta property="og:video:height" content="395">
+
+    <meta property="og:video:url" content="https://miradas360.github.io/miradas360-01/01-Borges/index.html">
+    <meta property="og:video:secure_url" content="https://miradas360.github.io/miradas360-01/01-Borges/index.html">
+    <meta property="og:video:type" content="application/x-shockwave-flash">
+    <meta property="og:video:width" content="560">
+    <meta property="og:video:height" content="395">
+
+    <meta name="description" content="Jorge Luis Borges es tu guía para recorrer la Antigua Biblioteca Nacional. Viví la experiencia #PasajeABorges, por Fernanda Ibañez, Gia Castello y Adriel Zarate">
+
+    <!-- <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script> -->
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+
+
+    <img id="cardboard" src="img/cardboard.png" style="display:none">
+    <img id="headphones" src="img/headphones.png" style="display:none">
+    <img id="rotation" src="img/rotation.png" style="display:none">
+    <img id="msg-1" src="img/intro-msg-1.jpg" style="display:none">
+    <img id="msg-2" src="img/intro-msg-2.jpg" style="display:none">
+    <img id="msg-3" src="img/intro-msg-3.jpg" style="display:none">
+    <img id="pre-cierre" src="img/pre-cierre.jpg" style="display:none">
+    <img id="cierre" src="img/cierre.png" style="display:none">
+
+
+
+    <img id="intro" src="img/intro.jpg" style="display:none">
+
+    <img id="scene1img" src="img/360/Escena-01.jpg" style="display:none">
+    <img id="scene2img" src="img/360/Escena-02.jpg" style="display:none">
+    <img id="scene3bimg" src="img/360/Escena-03-negativo.jpg" style="display:none">
+    <img id="scene3wimg" src="img/360/Escena-03-positivo.jpg" style="display:none">
+    <img id="scene4img" src="img/360/Escena-04.jpg" style="display:none">
+    <img id="scene5img" src="img/360/Escena-05.jpg" style="display:none">
+    <img id="scene6img" src="img/360/Escena-06.jpg" style="display:none">
+    <img id="scene7bimg" src="img/360/Escena-07-negativo.jpg" style="display:none">
+    <img id="scene7wimg" src="img/360/Escena-07-positivo.jpg" style="display:none">
+    <img id="scene8img" src="img/360/Escena-08.jpg" style="display:none">
+    <img id="scene9img" src="img/360/Escena-09.jpg" style="display:none">
+    <img id="scene10img" src="img/360/Escena-11-A.jpg" style="display:none">
+
+    <img id="auto2-A-img" src="img/360/Escena-11-A.jpg" style="display:none">
+    <img id="auto2-B-img" src="img/360/Escena-11-B.jpg" style="display:none">
+    <img id="auto2-C-img" src="img/360/Escena-11-C.jpg" style="display:none">
+    <img id="auto2-D-img" src="img/360/Escena-11-D.jpg" style="display:none">
+    <img id="auto2-E-img" src="img/360/Escena-11-E.jpg" style="display:none">
+    <img id="auto2-F-img" src="img/360/Escena-11-F.jpg" style="display:none">
+    <img id="auto2-G-img" src="img/360/Escena-11-G.jpg" style="display:none">
+    <img id="auto2-H-img" src="img/360/Escena-11-H.jpg" style="display:none">
+    <img id="auto2-I-img" src="img/360/Escena-11-I.jpg" style="display:none">
+    <img id="auto2-J-img" src="img/360/Escena-11-J.jpg" style="display:none">
+    <img id="auto2-K-img" src="img/360/Escena-11-K.jpg" style="display:none">
+    <img id="auto2-L-img" src="img/360/Escena-11-L.jpg" style="display:none">
+    <img id="auto2-M-img" src="img/360/Escena-11-M.jpg" style="display:none">
+    <img id="auto2-N-img" src="img/360/Escena-11-N.jpg" style="display:none">
+    <img id="auto2-O-img" src="img/360/Escena-11-O.jpg" style="display:none">
+    <img id="auto2-P-img" src="img/360/Escena-11-P.jpg" style="display:none">
+    <!-- <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
+    <script src="js/droid_sans_mono_regular.typeface.js"></script> -->
+</head>
+
+<body>
+
+    <a-scene>
+
+        <a-assets>
+          <img id="cardboard" src="img/cardboard.png">
+          <img id="headphones" src="img/headphones.png">
+          <img id="rotation" src="img/rotation.png">
+          <img id="msg-1" src="img/intro-msg-1.jpg">
+          <img id="msg-2" src="img/intro-msg-2.jpg">
+          <img id="msg-3" src="img/intro-msg-3.jpg">
+          <img id="pre-cierre" src="img/pre-cierre.jpg">
+          <img id="cierre" src="img/cierre.png">
+
+          <img id="intro" src="img/intro.jpg">
+
+
+        </a-assets>
+
+        <a-sky color="#000"></a-sky>
+
+        <a-entity position="0 0 0">
+            <a-camera id="camara" look-controls="false" wasd-controls="false">
+
+
+                    <a-entity id="cursor" scale="0 0 0" position="0 0 -3" geometry="primitive: ring; radiusOuter: 0.10; radiusInner: 0.08;segmentsTheta:6;" material="color: white;opacity:0.75; shader: flat" cursor="maxDistance: 30;">
+
+                    </a-entity>
+
+
+                    <a-image id="equipo" src="#pre-cierre" opacity="1" position="0 0 -6" width="10" height="10" scale="1 1 1">
+
+                    </a-image>
+            </a-camera>
+        </a-entity>
+
+
+    </a-scene>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Miradas 360 #S02E01 </title>
+    <!-- Facebook iframe embed  -->
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:site" content="@divevr">
+    <meta name="twitter:title" content=">Miradas 360 #S01E01 -Pasaje a Borges">
+    <meta name="twitter:description" content="Jorge Luis Borges es tu guía para recorrer la Antigua Biblioteca Nacional. Viví la experiencia #PasajeABorges, por Fernanda Ibañez, Gia Castello y Adriel Zarate">
+    <meta name="twitter:image" content="https://miradas360.github.io/miradas360-01/images/posters/01-borges.png">
+    <meta name="twitter:player" content="https://miradas360.github.io/miradas360-01/01-Borges/index.html">
+    <meta name="twitter:player:width" content="600">
+    <meta name="twitter:player:height" content="370">
+
+    <meta property="og:title" content="Miradas 360 #S01E01 - Pasaje a Borges">
+    <meta property="og:url" content="https://miradas360.github.io/miradas360-01/01-Borges/index.html">
+    <meta property="og:description" content="Jorge Luis Borges es tu guía para recorrer la Antigua Biblioteca Nacional. Viví la experiencia #PasajeABorges, por Fernanda Ibañez, Gia Castello y Adriel Zarate">
+    <meta property="og:type" content="video" />
+    <meta property="og:image" content="https://miradas360.github.io/miradas360-01/images/posters/01-borges.png">
+    <meta property="og:image:seucre_url" content="https://miradas360.github.io/miradas360-01/images/posters/01-borges.png">
+
+    <meta property="og:type" content="video" />
+    <meta property="og:video:url" content="https://miradas360.github.io/miradas360-01/01-Borges/index.html">
+    <meta property="og:video:secure_url" content="https://miradas360.github.io/miradas360-01/01-Borges/index.html">
+    <meta property="og:video:type" content="text/html">
+    <meta property="og:video:width" content="560">
+    <meta property="og:video:height" content="395">
+
+    <meta property="og:video:url" content="https://miradas360.github.io/miradas360-01/01-Borges/index.html">
+    <meta property="og:video:secure_url" content="https://miradas360.github.io/miradas360-01/01-Borges/index.html">
+    <meta property="og:video:type" content="application/x-shockwave-flash">
+    <meta property="og:video:width" content="560">
+    <meta property="og:video:height" content="395">
+
+    <meta name="description" content="Jorge Luis Borges es tu guía para recorrer la Antigua Biblioteca Nacional. Viví la experiencia #PasajeABorges, por Fernanda Ibañez, Gia Castello y Adriel Zarate">
+
+    <!-- <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script> -->
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+
+
+    <img id="cardboard" src="img/cardboard.png" style="display:none">
+    <img id="headphones" src="img/headphones.png" style="display:none">
+    <img id="rotation" src="img/rotation.png" style="display:none">
+    <img id="msg-1" src="img/intro-msg-1.jpg" style="display:none">
+    <img id="msg-2" src="img/intro-msg-2.jpg" style="display:none">
+    <img id="msg-3" src="img/intro-msg-3.jpg" style="display:none">
+
+    <img id="scene1img" src="img/360/Escena-01.jpg" style="display:none">
+    <img id="scene2img" src="img/360/Escena-02.jpg" style="display:none">
+    <img id="scene3bimg" src="img/360/Escena-03-negativo.jpg" style="display:none">
+    <img id="scene3wimg" src="img/360/Escena-03-positivo.jpg" style="display:none">
+    <img id="scene4img" src="img/360/Escena-04.jpg" style="display:none">
+    <img id="scene5img" src="img/360/Escena-05.jpg" style="display:none">
+    <img id="scene6img" src="img/360/Escena-06.jpg" style="display:none">
+    <img id="scene7bimg" src="img/360/Escena-07-negativo.jpg" style="display:none">
+    <img id="scene7wimg" src="img/360/Escena-07-positivo.jpg" style="display:none">
+    <img id="scene8img" src="img/360/Escena-08.jpg" style="display:none">
+    <img id="scene9img" src="img/360/Escena-09.jpg" style="display:none">
+    <img id="scene10img" src="img/360/Escena-11-A.jpg" style="display:none">
+
+    <img id="auto2-A-img" src="img/360/Escena-11-A.jpg" style="display:none">
+    <img id="auto2-B-img" src="img/360/Escena-11-B.jpg" style="display:none">
+    <img id="auto2-C-img" src="img/360/Escena-11-C.jpg" style="display:none">
+    <img id="auto2-D-img" src="img/360/Escena-11-D.jpg" style="display:none">
+    <img id="auto2-E-img" src="img/360/Escena-11-E.jpg" style="display:none">
+    <img id="auto2-F-img" src="img/360/Escena-11-F.jpg" style="display:none">
+    <img id="auto2-G-img" src="img/360/Escena-11-G.jpg" style="display:none">
+    <img id="auto2-H-img" src="img/360/Escena-11-H.jpg" style="display:none">
+    <img id="auto2-I-img" src="img/360/Escena-11-I.jpg" style="display:none">
+    <img id="auto2-J-img" src="img/360/Escena-11-J.jpg" style="display:none">
+    <img id="auto2-K-img" src="img/360/Escena-11-K.jpg" style="display:none">
+    <img id="auto2-L-img" src="img/360/Escena-11-L.jpg" style="display:none">
+    <img id="auto2-M-img" src="img/360/Escena-11-M.jpg" style="display:none">
+    <img id="auto2-N-img" src="img/360/Escena-11-N.jpg" style="display:none">
+    <img id="auto2-O-img" src="img/360/Escena-11-O.jpg" style="display:none">
+    <img id="auto2-P-img" src="img/360/Escena-11-P.jpg" style="display:none">
+    <!-- <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
+    <script src="js/droid_sans_mono_regular.typeface.js"></script> -->
+</head>
+
+<body>
+
+    <a-scene>
+
+        <a-assets>
+          <img id="message" src="img/message.png">
+
+            <img id="cardboard" src="img/cardboard.png">
+            <img id="headphones" src="img/headphones.png">
+            <img id="rotation" src="img/rotation.png">
+            <img id="msg-1" src="img/intro-msg-1.jpg">
+            <img id="msg-2" src="img/intro-msg-2.jpg">
+            <img id="msg-3" src="img/intro-msg-3.jpg">
+            <img id="pre-cierre" src="img/pre-cierre.jpg">
+            <img id="cierre" src="img/cierre.png">
+
+            <img id="scene1img" src="img/360/Escena-01.jpg">
+            <img id="scene2img" src="img/360/Escena-02.jpg">
+            <img id="scene3bimg" src="img/360/Escena-03-negativo.jpg">
+            <img id="scene3wimg" src="img/360/Escena-03-positivo.jpg">
+            <img id="scene4img" src="img/360/Escena-04.jpg">
+            <img id="scene5img" src="img/360/Escena-05.jpg">
+            <img id="scene6img" src="img/360/Escena-06.jpg">
+            <img id="scene7bimg" src="img/360/Escena-07-negativo.jpg">
+            <img id="scene7wimg" src="img/360/Escena-07-positivo.jpg">
+            <img id="scene8img" src="img/360/Escena-08.jpg">
+            <img id="scene9img" src="img/360/Escena-09.jpg">
+            <img id="scene10img" src="img/360/Escena-11-A.jpg">
+
+            <img id="auto2-1-img" src="img/360/Escena-11-A.jpg">
+            <img id="auto2-2-img" src="img/360/Escena-11-B.jpg">
+            <img id="auto2-3-img" src="img/360/Escena-11-C.jpg">
+            <img id="auto2-4-img" src="img/360/Escena-11-D.jpg">
+            <img id="auto2-5-img" src="img/360/Escena-11-E.jpg">
+            <img id="auto2-6-img" src="img/360/Escena-11-F.jpg">
+            <img id="auto2-7-img" src="img/360/Escena-11-G.jpg">
+            <img id="auto2-8-img" src="img/360/Escena-11-H.jpg">
+            <img id="auto2-9-img" src="img/360/Escena-11-I.jpg">
+            <img id="auto2-10-img" src="img/360/Escena-11-J.jpg">
+            <img id="auto2-11-img" src="img/360/Escena-11-K.jpg">
+            <img id="auto2-12-img" src="img/360/Escena-11-L.jpg">
+            <img id="auto2-13-img" src="img/360/Escena-11-M.jpg">
+            <img id="auto2-14-img" src="img/360/Escena-11-N.jpg">
+            <img id="auto2-15-img" src="img/360/Escena-11-O.jpg">
+            <img id="auto2-16-img" src="img/360/Escena-11-P.jpg">
+
+        </a-assets>
+
+        <a-sky color="#000"></a-sky>
+
+        <a-entity position="0 0 0">
+            <a-camera id="camara" look-controls="false" wasd-controls="false">
+
+
+                <a-entity id="cursor" scale="0 0 0" position="0 0 -3" geometry="primitive: ring; radiusOuter: 0.10; radiusInner: 0.08;segmentsTheta:6;" material="color: white;opacity:0.75; shader: flat" cursor="maxDistance: 30;">
+
+                </a-entity>
+                <a-entity id="audio" position="0 0 0"></a-entity>
+                <a-entity id="backsounddiv" position="0 0 1"></a-entity>
+
+                <a-image id="messagediv" src="#message" position="0 -10 -1" width="1.5" opacity="0"></a-image>
+                <a-image src="#msg-1" opacity="0" position="0 -1 -6" width="7">
+                    <a-animation attribute="opacity" from="0" to="1" dur="5000">
+                    </a-animation>
+                    <a-animation attribute="opacity" from="1" to="0" begin="5000" dur="5000">
+                    </a-animation>
+                    <a-animation attribute="visible" begin="10000" to="false"></a-animation>
+                    <a-animation begin="10000" easing="ease-out" attribute="scale" from="1 1 1" to="0 0 0" dur="150"></a-animation>
+                </a-image>
+
+                <a-image src="#headphones" opacity="0" position="0 0 -6">
+                    <a-animation attribute="opacity" from="0" to="1" begin="0" dur="5000">
+                    </a-animation>
+                    <a-animation attribute="opacity" from="1" to="0" begin="5000" dur="5000">
+                    </a-animation>
+                    <a-animation attribute="visible" begin="10000" to="false"></a-animation>
+                    <a-animation attribute="rotation" dur="5000" fill="forwards" to="0 360 0" repeat="2"></a-animation>
+                    <a-animation begin="10000" easing="ease-out" attribute="scale" from="1 1 1" to="0 0 0" dur="150"></a-animation>
+
+                </a-image>
+
+                <a-image src="#msg-2" opacity="0" position="0 -1 -6" width="9">
+                    <a-animation attribute="visible" begin="10000" to="true"></a-animation>
+                    <a-animation attribute="opacity" from="0" to="1" begin="10000" dur="5000">
+                    </a-animation>
+                    <a-animation attribute="opacity" from="1" to="0" begin="15000" dur="5000">
+                    </a-animation>
+                    <a-animation attribute="visible" begin="20000" to="false"></a-animation>
+                    <a-animation begin="20000" easing="ease-out" attribute="scale" from="1 1 1" to="0 0 0" dur="150"></a-animation>
+
+                </a-image>
+
+                <a-image src="#cardboard" visibiity="false" opacity="0" position="0 0 -6">
+                    <a-animation attribute="visible" begin="10000" to="true"></a-animation>
+                    <a-animation attribute="opacity" from="0" to="1" begin="10000" dur="5000">
+                    </a-animation>
+                    <a-animation attribute="opacity" from="1" to="0" begin="15000" dur="5000">
+                    </a-animation>
+                    <a-animation attribute="visible" begin="20000" to="false"></a-animation>
+                    <a-animation attribute="rotation" begin="10000" dur="5000" fill="forwards" to="0 360 0" repeat="3">
+                    </a-animation>
+                    <a-animation begin="20000" easing="ease-out" attribute="scale" from="1 1 1" to="0 0 0" dur="150"></a-animation>
+
+                </a-image>
+
+                <a-image src="#msg-3" opacity="0" position="0 -1 -6" width="9">
+                    <a-animation attribute="visible" begin="20000" to="true"></a-animation>
+                    <a-animation attribute="opacity" from="0" to="1" begin="20000" dur="5000">
+                    </a-animation>
+                    <a-animation attribute="opacity" from="1" to="0" begin="25000" dur="5000">
+                    </a-animation>
+                    <a-animation attribute="visible" begin="30000" to="false"></a-animation>
+                    <a-animation begin="30000" easing="ease-out" attribute="scale" from="1 1 1" to="0 0 0" dur="150"></a-animation>
+
+                </a-image>
+
+                <a-image src="#rotation" visibiity="false" opacity="0" position="0 0 -6">
+                    <a-animation attribute="visible" begin="20000" to="true"></a-animation>
+                    <a-animation attribute="opacity" from="0" to="1" begin="20000" dur="5000">
+                    </a-animation>
+                    <a-animation attribute="opacity" from="1" to="0" begin="25000" dur="5000">
+                    </a-animation>
+                    <a-animation attribute="visible" begin="30000" to="false"></a-animation>
+                    <a-animation attribute="rotation" begin="20000" dur="5000" fill="forwards" to="0 360 0" repeat="3"></a-animation>
+                    <a-animation begin="30000" easing="ease-out" attribute="scale" from="1 1 1" to="0 0 0" dur="150"></a-animation>
+                    <a-animation id="start" attribute="visible" begin="35000" to="false"></a-animation>
+                </a-image>
+
+
+                <a-image id="tituloCierre" src="#pre-cierre" opacity="0" position="0 0 -6" width="16" height="10" scale="0 0 0">
+                    <!-- <a-animation attribute="opacity" from="0" to="1" dur="5000">
+                      </a-animation>
+                      <a-animation attribute="opacity" from="1" to="0" begin="10000" dur="5000">
+                      </a-animation>
+                      <a-animation attribute="visible" begin="15000" to="false"></a-animation> -->
+                </a-image>
+
+                <a-image id="equipo" src="#cierre" opacity="0" position="0 0 -6" width="16" height="10" scale="0 0 0">
+                    <!-- <a-animation attribute="opacity" from="0" to="1" dur="5000">
+                      </a-animation>
+                      <a-animation attribute="opacity" from="1" to="0" begin="5000" dur="5000"></a-animation>-->
+                </a-image>
+            </a-camera>
+        </a-entity>
+
+        <a-sphere id="scene1" class="escena" src="#scene1img" radius="1" position="0 0 0" scale="0 0 0" opacity="0"></a-sphere>
+        <a-entity id="action" position="0 0 0"></a-entity>
+        <a-sphere id="portal" position="0 0 0" opacity="0" radius=".3" scale="0 0 0">
+            <a-animation attribute="geometry.radius" dur="1500" begin="0" easing="linear" from=".3" to=".4" repeat="indefinite"></a-animation>
+        </a-sphere>
+
+        <a-sphere id="activemessage" position="2 -2.7 -1.35" opacity="0" radius=".3" scale="0 0 0">
+            <a-animation attribute="geometry.radius" dur="1500" begin="0" easing="linear" from=".3" to=".4" repeat="indefinite"></a-animation>
+        </a-sphere>
+
+    </a-scene>
+
+    <script src="js/transitions.js"></script>
+    <script src="js/aEscena.js"></script>
+    <script src="js/aEscenaAutomatica.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/otherFunctions.js"></script>
+
+</body>
+
+</html>
